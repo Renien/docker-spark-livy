@@ -74,5 +74,5 @@ Spark Worker UI:
 ![SparkWorker](https://raw.githubusercontent.com/Renien/docker-spark-livy/master/doc/spark-worker.png "SparkWorker")
 
 ## License
-[Docker Spark Standalone](https://github.com/Renien/docker-spark-livy) is released under the [MIT](https://opensource.org/licenses/MIT) © [Renien](https://github.com/Renien).
+[Docker Spark Livy](https://github.com/Renien/docker-spark-livy) is released under the [MIT](https://opensource.org/licenses/MIT) © [Renien](https://github.com/Renien).
 
