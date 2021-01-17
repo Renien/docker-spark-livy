@@ -54,10 +54,10 @@ Test Spark and Livy using `API`.
 # CREATING A LIVY SESSION
 curl -X POST -d '{"kind": "spark","driverMemory":"512M","executorMemory":"512M"}' -H "Content-Type: application/json" http://localhost:8998/sessions/
 
-# SUBMITTING SIMPLE LOGIC TEST SPARK SHELL
+# SUBMITTING A SIMPLE LOGIC TO TEST SPARK SHELL
 curl -X POST -d '{"code": "1 + 1"}' -H "Content-Type: application/json" http://localhost:8998/sessions/0/statements
 
-# SUBMITTING SPARK COMMAND
+# SUBMITTING A SPARK CODE
 curl -X POST -d '{"code": "val data = Array(1,2,3); sc.parallelize(data).count"}' -H "Content-Type: application/json" http://localhost:8998/sessions/0/statements
 ```
 
