@@ -1,0 +1,3 @@
+livy.spark.master = spark://master:7077
+livy.file.local-dir-whitelist = /
+livy.spark.driver.memory=1g
