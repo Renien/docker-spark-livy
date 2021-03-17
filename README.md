@@ -47,7 +47,7 @@ Spark Docker Master/Work Image : [Spark Standalone Image](https://hub.docker.com
 Access the UIs:
 1. Spark Master at spark://master:7077 (http://localhost:8080/).
 2. Spark Worker at 172.20.0.2:8881 (http://localhost:8081/).
-3. Livy UI at 172.20.0.3:8998 (http://localhost:8081/).
+3. Livy UI at 172.20.0.3:8998 (http://localhost:8998/).
 
 Test Spark and Livy using `API`.
 ```sh
