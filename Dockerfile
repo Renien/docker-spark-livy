@@ -31,13 +31,13 @@ ENV PIP_DISABLE_PIP_VERSION_CHECK 1
 
 # JAVA
 ARG JAVA_MAJOR_VERSION=8
-ARG JAVA_UPDATE_VERSION=281
-ARG JAVA_BUILD_NUMBER=09
+ARG JAVA_UPDATE_VERSION=291
+ARG JAVA_BUILD_NUMBER=10
 ENV JAVA_HOME /usr/jdk1.${JAVA_MAJOR_VERSION}.0_${JAVA_UPDATE_VERSION}
 
 ENV PATH $PATH:$JAVA_HOME/bin
-RUN wget --no-cookies --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com"  \
-    http://download.oracle.com/otn-pub/java/jdk/${JAVA_MAJOR_VERSION}u${JAVA_UPDATE_VERSION}-b${JAVA_BUILD_NUMBER}/89d678f2be164786b292527658ca1605/server-jre-${JAVA_MAJOR_VERSION}u${JAVA_UPDATE_VERSION}-linux-x64.tar.gz
+RUN wget -c --header "Cookie: oraclelicense=accept-securebackup-cookie"  \
+    http://download.oracle.com/otn-pub/java/jdk/${JAVA_MAJOR_VERSION}u${JAVA_UPDATE_VERSION}-b${JAVA_BUILD_NUMBER}/d7fc238d0cbf4b0dac67be84580cfb4b/server-jre-${JAVA_MAJOR_VERSION}u${JAVA_UPDATE_VERSION}-linux-x64.tar.gz
 
 RUN tar xvfz $(pwd)/server-jre-${JAVA_MAJOR_VERSION}u${JAVA_UPDATE_VERSION}-linux-x64.tar.gz -C /usr/ \
   && ln -s $JAVA_HOME /usr/java \
